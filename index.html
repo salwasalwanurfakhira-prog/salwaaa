@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Pink Modern</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <!-- Navigasi -->
+    <nav class="navbar">
+        <div class="logo">🌸 Portofolio</div>
+        <ul class="nav-links">
+            <li><a href="#profil">Profil</a></li>
+            <li><a href="#motivasi">Motivasi</a></li>
+            <li><a href="#cita-cita">Cita-Cita</a></li>
+            <li><a href="#sertifikat">Sertifikat</a></li>
+            <li><a href="#hobi">Hobi</a></li>
+            <li><a href="#sosmed">Medsos</a></li>
+            <li><a href="#buku-tamu">Buku Tamu</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <!-- 1. PROFIL (Selalu Terbuka / Tidak Bisa Diketuk-Tutup) -->
+        <section id="profil" class="card profile-card">
+            <h2>Profil Saya</h2>
+            <div class="profile-content">
+                <div class="profile-frame">
+                    <!-- Ganti src dengan link foto kamu -->
+                    <img src="POTO/09.jpeg" alt="Foto Profil" class="profile-img">
+                </div>
+                <div class="profile-text">
+                    <h3>Nama Lengkap</h3>
+                    <p class="subtitle">Creative Thinker & Dreamer</p>
+                    <p>Halo! Selamat datang di portofolio saya. Saya sosok yang suka belajar hal baru dan punya mimpi besar untuk masa depan.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. MOTIVASI (Bisa Diketuk) -->
+        <details id="motivasi" class="card toggle-card">
+            <summary><h2>✨ Motivasi Hidup</h2></summary>
+            <div class="card-body">
+                <blockquote class="pink-quote">
+                    "Setiap langkah kecil hari ini adalah bagian dari perjalanan besar esok hari. Tetap berusaha dan percaya pada proses!"
+                </blockquote>
+            </div>
+        </details>
+
+        <!-- 3. CITA-CITA (Bisa Diketuk) -->
+        <details id="cita-cita" class="card toggle-card">
+            <summary><h2>🎯 Cita-Cita & Rencana</h2></summary>
+            <div class="card-body">
+                <div class="target-grid">
+                    <div class="target-card plan-a">
+                        <span class="badge-pink">PLAN A</span>
+                        <div>
+                            <h4>Kuliah & Menjadi Guru</h4>
+                            <p>Lanjut ke perguruan tinggi dan menjadi guru yang mendidik serta menginspirasi generasi muda.</p>
+                        </div>
+                    </div>
+                    <div class="target-card plan-b">
+                        <span class="badge-pink-soft">PLAN B</span>
+                        <div>
+                            <h4>Langsung Kerja</h4>
+                            <p>Bekerja setelah lulus sekolah untuk mandiri, mendapat pengalaman, dan membangun karier.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </details>
+
+        <!-- 4. SERTIFIKAT (Bisa Diketuk) -->
+        <details id="sertifikat" class="card toggle-card">
+            <summary><h2>📜 Sertifikat & Prestasi</h2></summary>
+            <div class="card-body">
+                <div class="grid-container">
+                    <div class="pink-box">
+                        <h4>Sertifikat Pelatihan A</h4>
+                        <p>Penerbit: Lembaga Pendidikan</p>
+                        <span class="year-tag">2024</span>
+                    </div>
+                    <div class="pink-box">
+                        <h4>Sertifikat Pelatihan B</h4>
+                        <p>Penerbit: Course Online</p>
+                        <span class="year-tag">2025</span>
+                    </div>
+                </div>
+            </div>
+        </details>
+
+        <!-- 5. HOBI (Bisa Diketuk) -->
+        <details id="hobi" class="card toggle-card">
+            <summary><h2>🎨 Hobi & Minat</h2></summary>
+            <div class="card-body">
+                <div class="hobby-grid">
+                    <div class="hobby-item">🎧 Mendengarkan Musik</div>
+                    <div class="hobby-item">📚 Membaca Buku</div>
+                    <div class="hobby-item">🎨 Desain / Menggambar</div>
+                    <div class="hobby-item">✈️ Traveling</div>
+                </div>
+            </div>
+        </details>
+
+        <!-- 6. MEDIA SOSIAL (Bisa Diketuk) -->
+        <details id="sosmed" class="card toggle-card">
+            <summary><h2>📲 Media Sosial</h2></summary>
+            <div class="card-body">
+                <div class="social-links">
+                    <a href="#" class="social-btn instagram">Instagram</a>
+                    <a href="#" class="social-btn tiktok">TikTok</a>
+                    <a href="#" class="social-btn linkedin">LinkedIn</a>
+                </div>
+            </div>
+        </details>
+
+        <!-- 7. BUKU TAMU (Bisa Diketuk) -->
+        <details id="buku-tamu" class="card toggle-card">
+            <summary><h2>💌 Buku Tamu</h2></summary>
+            <div class="card-body">
+                <form class="guestbook-form">
+                    <div class="form-group">
+                        <label for="nama">Nama:</label>
+                        <input type="text" id="nama" placeholder="Masukkan nama kamu" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" placeholder="Masukkan email kamu" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="pesan">Pesan / Kesan:</label>
+                        <textarea id="pesan" rows="3" placeholder="Tulis pesan kamu di sini..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Kirim Pesan 💖</button>
+                </form>
+            </div>
+        </details>
+
+        <!-- 8. PENUTUP -->
+        <section class="card closing-card">
+            <h2>🌸 Penutup</h2>
+            <p>Terima kasih banyak sudah menyempatkan waktu untuk berkunjung dan melihat-lihat halaman portofolio saya. Semoga harimu menyenangkan!</p>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Portofolio Pink. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
